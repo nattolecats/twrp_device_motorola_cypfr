@@ -62,6 +62,10 @@ ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 endif
 
+# Kernel modules
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilt/modules/,$(TARGET_COPY_OUT_RAMDISK)/lib/modules)
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
