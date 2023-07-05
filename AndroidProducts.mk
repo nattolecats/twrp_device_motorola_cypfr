@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_cypfr.mk
+    $(LOCAL_DIR)/twrp_cypfr.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_cypfr-user \
-    omni_cypfr-userdebug \
-    omni_cypfr-eng
+    twrp_cypfr-eng

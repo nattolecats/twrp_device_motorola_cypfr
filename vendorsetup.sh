@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_cypfr-user
-add_lunch_combo omni_cypfr-userdebug
-add_lunch_combo omni_cypfr-eng
+export ALLOW_MISSING_DEPENDENCIES=true
